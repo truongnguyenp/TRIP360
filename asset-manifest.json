@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TRIP360/static/css/main.b18282d0.css",
+    "main.js": "/TRIP360/static/js/main.f9a5bcc2.js",
+    "static/js/787.05044d6e.chunk.js": "/TRIP360/static/js/787.05044d6e.chunk.js",
+    "static/media/heroarea.png": "/TRIP360/static/media/heroarea.abaa02a5ccfc61c1c981.png",
+    "static/media/icon3.png": "/TRIP360/static/media/icon3.05082d6313f06219cd33.png",
+    "static/media/icon1.png": "/TRIP360/static/media/icon1.b32731f332daf8bd99b6.png",
+    "static/media/icon2.png": "/TRIP360/static/media/icon2.6b052e541d7a5cd2a43d.png",
+    "static/media/featuredgame-bg.jpg": "/TRIP360/static/media/featuredgame-bg.1f3aa2ec8c6fb99e66ec.jpg",
+    "index.html": "/TRIP360/index.html",
+    "static/media/getFetch.cjs": "/TRIP360/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.b18282d0.css.map": "/TRIP360/static/css/main.b18282d0.css.map",
+    "main.f9a5bcc2.js.map": "/TRIP360/static/js/main.f9a5bcc2.js.map",
+    "787.05044d6e.chunk.js.map": "/TRIP360/static/js/787.05044d6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b18282d0.css",
+    "static/js/main.f9a5bcc2.js"
+  ]
+}
