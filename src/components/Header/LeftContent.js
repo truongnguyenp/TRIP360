@@ -20,8 +20,7 @@ function LeftContent() {
                 <div className="language-selector">
                     <select name="language" className="language">
                         <option value="1">English</option>
-                        <option value="2">France</option>
-                        <option value="3">Japan</option>
+                        <option value="2">Vietnamese</option>
                     </select>
                 </div>
             </li>

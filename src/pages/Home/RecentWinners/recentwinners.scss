@@ -6,10 +6,20 @@
         margin-top: 48px;
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
+    }
+    video {
+        width: 800px;
+        height: 800px;
     }
     .col-3{
         width: calc(100%/3);
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-self: center;
     }
 }

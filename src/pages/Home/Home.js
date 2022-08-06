@@ -25,7 +25,7 @@ function Home() {
         <Features/>
         <Activities/>
         <Funfact/>
-        {/* <RecentWinners/> */}
+        <RecentWinners/>
     </div> );
 }
 
