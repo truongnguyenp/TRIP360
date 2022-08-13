@@ -29,13 +29,18 @@ ul,
 li {
   list-style: none;
 }
-select, i, button {
-    border: none;
-    color: none;
-    background: none;
-    color: $text-color;
+select,
+i,
+button {
+  border: none;
+  color: none;
+  background: none;
+  color: $text-color;
 }
 a {
   text-decoration: none;
   font-size: 18px;
+}
+.container-breadcrumb {
+  padding: 300px 120px;
 }

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import Button from '../../../components/Button/Button';
-import heroarea from '../../../assets/heroarea.png';
 import { useTranslation } from 'react-i18next';
 function Hero() {
     const {t} = useTranslation();

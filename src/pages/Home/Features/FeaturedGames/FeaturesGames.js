@@ -1,8 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Card from "../../../../components/Card/Card";
-import game1 from '../../../../assets/game/icon1.png';
-import game2 from '../../../../assets/game/icon2.png';
-import game3 from '../../../../assets/game/icon3.png';
 import Button from "../../../../components/Button/Button";
 function FeaturesGames({content}) {
     const heading = content.secion_heading;

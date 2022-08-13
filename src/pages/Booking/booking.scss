@@ -1,0 +1,30 @@
+@import '../../styles/variable';
+.booking{
+    background-color: $bg-color;
+    
+    .booking__content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .btn-active{
+            margin-top: 48px;
+        }
+        label,i,svg{
+            color: $effect-base;
+            font-size: 38px;
+        }
+    }
+    .booking__group{
+        display: flex;
+        justify-content: center;
+    }
+    input{
+        padding: 8px 322px;
+    }
+    .booking__date{
+        margin-top: 32px;
+    }
+    
+}
+.booking__place{
+    
+}

@@ -47,6 +47,9 @@ const resources = {
               "table_heading": ["Place", "Price", "Service"],
               "tab_menu": ["All", "Asia","Europe"]
           }
+      },
+      "booking" :{
+        "find": "FIND"
       }
     }
   },
