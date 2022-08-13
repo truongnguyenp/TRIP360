@@ -7,6 +7,7 @@ function Activities() {
     const {t} = useTranslation();
     let ACTIVITIES = t('activities',{ returnObjects: true });
     const SECTION_HEADING = ACTIVITIES.section_heading;
+    console.log(SECTION_HEADING)
     const DATA_FETCH = [
         [{
             "NAME": "DA NANG",
