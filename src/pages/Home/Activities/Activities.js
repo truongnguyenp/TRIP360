@@ -15,29 +15,22 @@ function Activities() {
             "PROFIT": "FULL"
         },
         {
-            "NAME": "NEW YORK",
+            "NAME": "HUE",
             "ID": "500$",
             "PROFIT": "FULL"
         },
         {
-            "NAME": "PARIS",
-            "ID": "500$",
-            "PROFIT": "FULL"
-
-        },
-        {
-            "NAME": "MELBOURNE",
+            "NAME": "QUANG BINH",
             "ID": "500$",
             "PROFIT": "FULL"
         },
         {
-            "NAME": "PRAHA",
+            "NAME": "QUANG NAM",
             "ID": "500$",
             "PROFIT": "FULL"
-
         },
         {
-            "NAME": "HA NOI",
+            "NAME": "BINH DINH",
             "ID": "500$",
             "PROFIT": "FULL"
         },
@@ -52,42 +45,7 @@ function Activities() {
             "PROFIT": "FULL"
 
         }],
-        [
-            {
-                "NAME": "DA NANG",
-                "ID": "500$",
-                "PROFIT": "FULL"
-            }, {
-                "NAME": "HA NOI",
-                "ID": "500$",
-                "PROFIT": "FULL"
-            },
-            {
-                "NAME": "NHA TRANG",
-                "ID": "500$",
-                "PROFIT": "FULL"
-            },
-            {
-                "NAME": "DA LAT",
-                "ID": "B799B87240",
-                "PROFIT": "FULL"
 
-            }], [{
-                "NAME": "PARIS",
-                "ID": "500$",
-                "PROFIT": "FULL"
-            },
-            {
-                "NAME": "MELBOURNE",
-                "ID": "500$",
-                "PROFIT": "FULL"
-            },
-            {
-                "NAME": "PRAHA",
-                "ID": "500$",
-                "PROFIT": "FULL"
-
-            }]
 
 
     ]

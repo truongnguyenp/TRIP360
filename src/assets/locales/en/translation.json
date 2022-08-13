@@ -32,7 +32,7 @@
         },
         "table": {
             "table_heading": ["Place", "Price", "Service"],
-            "tab_menu": ["All", "Asia","Europe"]
+            "tab_menu": ["All"]
         }
     }
   }

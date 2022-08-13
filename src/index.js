@@ -19,7 +19,7 @@ const resources = {
       "header_pages": 
       [
           
-              "HOME"
+              "HOME", "INTRO"
               ,"PLACE","BOOKING","TRY OUT"
       ],
       "home_hero": [
@@ -45,12 +45,16 @@ const resources = {
           },
           "table": {
               "table_heading": ["Place", "Price", "Service"],
-              "tab_menu": ["All", "Asia","Europe"]
+              "tab_menu": ["Central Vietnam"]
           }
       },
       "booking" :{
         "find": "FIND",
         "book": "BOOK"
+      },
+      "intro" : {
+        "introduction": "INTRO",
+        "content": "Helping customers quickly access the tour they need, thereby making the decision to choose the most suitable tour through the results displayed on the website when searching compared to traditional ways."
       }
     }
   },
@@ -63,7 +67,7 @@ const resources = {
       "header_pages": 
       [
           
-              "TRANG CHỦ"
+              "TRANG CHỦ", "GIỚI THIỆU"
               ,"ĐIỂM DU LỊCH","ĐẶT VÉ","TRẢI NGHIỆM"
       ],
       "home_hero": [
@@ -88,15 +92,20 @@ const resources = {
               "text":"DỊCH VỤ DU LỊCH THỰC TẾ ẢO ĐẦU TIÊN"
           },
           "table": {
-              "table_heading": ["Thế giới", "Châu Á", "Châu Âu"],
-              "tab_menu": ["Thế giới", "Châu Á", "Châu Âu"]
+              "table_heading": ["Địa điểm", "Giá", "Dịch vụ"],
+              "tab_menu": ["Miền Trung"]
   
           }
       },
       "booking" :{
         "find": "TÌM KIẾM",
         "book": "ĐẶT NGAY"
+      },
+      "intro" : {
+        "introduction": "GIỚI THIỆU",
+        "content": "Giúp khách hàng nhanh chóng tiếp cận với tour mà họ cần, từ đó đưa ra quyết định lựa chọn tour phù hợp nhất thông qua kết quả hiển thị trên website khi tìm kiếm so với những cách làm truyền thống."
       }
+        
     }
   }
 };

@@ -28,7 +28,7 @@ function Hero() {
                 </div>
                 <div className="col-7">
                     <div className="hero-img2">
-                        <img className='hero-img' src='http://micdongsaigon.com.vn/wp-content/uploads/2020/03/Du-lich-toan-cau.jpg' alt="" />
+                        <img className='hero-img' src='https://dulichviet.com.vn/images/bandidau/cau-vang-da-nang(3).jpg' alt="" />
                     </div>
                 </div>
 

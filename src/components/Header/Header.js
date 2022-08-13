@@ -36,6 +36,10 @@ function Header({toggleModal,active}) {
             "ROUTE": "/",
         },
         {
+            "NAME": " INTRO",
+            "ROUTE": "/intro",
+        },
+        {
             "NAME": " PLACE",
             "ROUTE": "/place"
         },
@@ -80,7 +84,7 @@ function Header({toggleModal,active}) {
                         <div className='col'>
                             <nav className='navbar'>
                                 <a className ='nav__brand'>
-                                    <h1>TRAVEL360</h1>
+                                    <h1>TRIP360</h1>
                                     </a>
                                     <div className='navbar-collapse'>
                                         <ul className='navbar__nav'>
