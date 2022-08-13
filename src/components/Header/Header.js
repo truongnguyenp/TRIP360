@@ -19,11 +19,10 @@ function Header({toggleModal,active}) {
     const NAV_MENU = useRef(null);
     const HEADER = useRef(null);
     let sticky = HEADER;
-    // console.log(sticky)
 
     function headerFixed() {
         if(window.scrollY> sticky){
-            HEADER_TOP.current.className.add('hide');
+            HEADER_TOP.current.classList.add('hide');
         } else {
             HEADER_TOP.current.className.remove('hide');
         }
@@ -90,7 +89,6 @@ function Header({toggleModal,active}) {
                                                 let LINKCLASSNAME = 'nav__link';
                                                 let ITEMCLASSNAME = 'nav__item';
                                                 if(index==active) ITEMCLASSNAME+=' active';
-                                                if(item.NAME===" HOME" || item.NAME===" PAGES") LINKCLASSNAME+=" dropdown-toggle";
                                                 return(<li key={index} className={ITEMCLASSNAME}>
                                                 <Link to={item.ROUTE} className={LINKCLASSNAME}>
                                                     {HEADER_TRANS[index]}

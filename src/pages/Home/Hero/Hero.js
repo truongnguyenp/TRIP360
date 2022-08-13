@@ -18,7 +18,10 @@ function Hero() {
                         <p className="text">
                             {hero[2]}
                         </p>
+
+                        <a href='#activities'>
                         <Button className='btn-content' btnClassName='btn-active'>{hero[3]}</Button>
+                        </a>
 
 
                     </div>

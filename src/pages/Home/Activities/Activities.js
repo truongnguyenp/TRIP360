@@ -96,7 +96,7 @@ function Activities() {
     const TAB_MENU =
     ACTIVITIES.table.tab_menu;
     let [menuActive, setMenuActive] = useState(0);
-    return (<div className="activities">
+    return (<div className="activities" id="activities">
         <div className="container">
             <div className="row">
 

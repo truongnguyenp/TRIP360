@@ -1,5 +1,5 @@
 import './card.scss'
-function Card({image,title,children},) {
+function Card({image,title,children}) {
     
     return (<div className="card">
     <div className="icon">

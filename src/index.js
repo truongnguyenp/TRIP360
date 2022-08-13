@@ -49,7 +49,8 @@ const resources = {
           }
       },
       "booking" :{
-        "find": "FIND"
+        "find": "FIND",
+        "book": "BOOK"
       }
     }
   },
@@ -91,6 +92,10 @@ const resources = {
               "tab_menu": ["Thế giới", "Châu Á", "Châu Âu"]
   
           }
+      },
+      "booking" :{
+        "find": "TÌM KIẾM",
+        "book": "ĐẶT NGAY"
       }
     }
   }
