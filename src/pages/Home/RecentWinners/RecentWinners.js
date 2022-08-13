@@ -8,7 +8,7 @@ function RecentWinners() {
         "TITLE": "3D VIDEO",
         "TEXT": "You can see the world 3D"
     }
-    return (<section className="recent-winners">
+    return (<section id="recent-winners" className="recent-winners">
         <div className="container">
             <div className="row">
                 <SectionHeading title={SECTION_HEADING.TITLE} subtitle={SECTION_HEADING.SUBTITLE} TEXT={SECTION_HEADING.TEXT} />

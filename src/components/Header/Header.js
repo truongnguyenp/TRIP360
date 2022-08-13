@@ -84,7 +84,7 @@ function Header({toggleModal,active}) {
                         <div className='col'>
                             <nav className='navbar'>
                                 <a className ='nav__brand'>
-                                    <h1 className='title'>TRIP360</h1>
+                                    <h1>TRIP360</h1>
                                     </a>
                                     <div className='navbar-collapse'>
                                         <ul className='navbar__nav'>
@@ -100,7 +100,10 @@ function Header({toggleModal,active}) {
                                             </li>)
                                             })}
                                             <li className='nav__item'>
-                                            <Button onClickFunc={toggleModal} btnClassName='btn-active'>{HEADER_TRANS[HEADER_TRANS.length-1]}</Button>
+                                                <a href='#recent-winners'>
+                                                <Button  btnClassName='btn-active'>{HEADER_TRANS[HEADER_TRANS.length-1]}</Button>
+
+                                                </a>
                                             </li>
                                             
                                         </ul>
