@@ -22,15 +22,9 @@ function Booking({ content }) {
         }
     }
     const PLACE = [
-        "Danang",
-        "Hanoi",
-        "Nhatrang",
-        "Melbourne",
-        "Saint Peterburg",
-        "Dalat",
-        "Washington",
-        "New York",
-        "Paris"
+        "Thanh Hoá", "Nghệ An",
+         "Hà Tĩnh", "Quảng Bình", "Quảng Trị", "Đà Nẵng", "Quảng Nam", "Quảng Ngãi", "Bình Định", "Phú Yên", "Khánh Hoà", 
+         "Ninh Thuận", "Bình Thuận"
     ]
     const ITEMS = [
         {

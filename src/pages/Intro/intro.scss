@@ -12,75 +12,76 @@
             color: $effect-base;
             font-size: 38px;
         }
+        .booking__group{
+            display: flex;
+            justify-content: center;
+            margin: 0 180px;
+            text-align: center;
+    
+        }
+        select,input{
+            text-align: left;
+            margin-left: 13px;
+            width: 100%;
+            background-color: $second-color;
+        }
+        input{
+            color: $text-color;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            display: none;
+            -webkit-appearance: none;
+            width: 15px;
+            padding: 0px;
+            margin: 0px;
+            margin-top: 10px;
+        }
         
-    }
-    .booking__group{
-        display: flex;
-        justify-content: center;
-        margin: 0 180px;
-        text-align: center;
-
-    }
-    select,input{
-        text-align: left;
-        margin-left: 13px;
-        width: 100%;
-        background-color: $second-color;
-    }
-    input{
-        color: $text-color;
-    }
-    input[type="date"]::-webkit-calendar-picker-indicator {
-        display: none;
-        -webkit-appearance: none;
-        width: 15px;
-        padding: 0px;
-        margin: 0px;
-        margin-top: 10px;
+        .booking__date{
+            margin-top: 32px;
+        }
+        .booking__list{
+            display: none;
+            margin-top: 89px !important;
+            margin: 0 180px;
+            background-color: $element-bg-color;
+            
+        }
+        .row{
+            display: block;
+        }
+        .list-item{
+            border-top: 1px solid $bg-color;
+            display: flex;
+            width: 100%;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            margin: 0 40px;
+            padding: 40px 0px;
+        }
+        .title{
+            font-size: 48px;
+            text-transform: unset !important;
+        }
+        .btn-book{
+            position: absolute;
+            right: 0;
+            transform: translate(-80%);
+        }
+        .show{
+            display: block;
+        }
+        .row{
+            justify-content: center;
+        }
+        img{
+            height: 480px;
+            width: 480px;
+        }
+        
     }
     
-    .booking__date{
-        margin-top: 32px;
-    }
-    .booking__list{
-        display: none;
-        margin-top: 89px !important;
-        margin: 0 180px;
-        background-color: $element-bg-color;
-        
-    }
-    .row{
-        display: block;
-    }
-    .list-item{
-        border-top: 1px solid $bg-color;
-        display: flex;
-        width: 100%;
-        position: relative;
-        width: 100%;
-        align-items: center;
-        margin: 0 40px;
-        padding: 40px 0px;
-    }
-    .title{
-        font-size: 48px;
-        text-transform: unset !important;
-    }
-    .btn-book{
-        position: absolute;
-        right: 0;
-        transform: translate(-80%);
-    }
-    .show{
-        display: block;
-    }
-    .row{
-        justify-content: center;
-    }
-    img{
-        height: 480px;
-        width: 480px;
-    }
     
 }
 .booking__place{

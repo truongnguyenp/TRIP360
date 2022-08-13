@@ -84,7 +84,7 @@ function Header({toggleModal,active}) {
                         <div className='col'>
                             <nav className='navbar'>
                                 <a className ='nav__brand'>
-                                    <h1>TRIP360</h1>
+                                    <h1 className='title'>TRIP360</h1>
                                     </a>
                                     <div className='navbar-collapse'>
                                         <ul className='navbar__nav'>
