@@ -30,7 +30,10 @@ i18next
       },
       // react: { useSuspense: false },
       backendOptions: [{
-        loadPath: '/locales/{{lng}}/{{ns}}.json'
+        loadPath:
+            process.env.NODE_ENV !== "production"
+                ? `/src/assets/locales/{{lng}}/translation.json`
+                : ` /static/app/static/locales/{{lng}}/translation.json`,
       }]
     }
   });

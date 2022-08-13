@@ -1,0 +1,38 @@
+{
+    "top_header": {
+        "left":[" Support"],
+        "right": ["Sign in"]
+    },
+    "header_pages": 
+    [
+        
+            "HOME"
+            ,"PLACE","BOOKING","TRY OUT"
+    ],
+    "home_hero": [
+        "WELCOME TO OUR TRAVEL AGENCY","TRIP360","Let's travel together","See place to travel"
+    ],
+    "features": {
+        "features_box": ["GREAT OFFER","BEST SERVICE","24/7 SUPPORT"],
+        "features_games": {
+            "section_heading": {
+                "sub_title": "TRY TO CHECK OUT OUR",
+                "title": "TRAVEL SERVICE"
+            },
+            "features_list": [
+                "Try now", "PLACE","TOUR","RESTAURANT"
+            ]
+        }
+    },
+    "activities": {
+        "section_heading": {
+            "sub_title": "THE SMARTER WAY TO",
+            "title": "TRAVEL",
+            "text":"THE FIRST 3D PLACE TRAVELLING AGENCY"
+        },
+        "table": {
+            "table_heading": ["Place", "Price", "Service"],
+            "tab_menu": ["All", "Asia","Europe"]
+        }
+    }
+  }
