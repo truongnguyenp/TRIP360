@@ -62,7 +62,7 @@ function Booking({ content }) {
     ]
     return (
         <section className="booking ">
-            <Header active="2"></Header>
+            <Header active="3"></Header>
             <Breadcrumb bcImg="http://www.dulichduyendangvietnam.com/wp-content/uploads/du-lih-mien-trung1a.jpg" bcTitle="BOOKING" />
             <div className="booking__section">
                 <div className="booking__content">
