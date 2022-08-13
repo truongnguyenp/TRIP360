@@ -1,5 +1,4 @@
-import { useTranslation } from 'react-i18next';
-import ReactDOM from 'react-dom'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './header.scss'
 import RightContent from './RightContent';
@@ -7,11 +6,14 @@ import LeftContent from './LeftContent';
 import {Link} from 'react-router-dom';
 import { useRef } from 'react';
 import Button from '../Button/Button';
+import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
+import cookies from 'js-cookie'
+
 function Header({toggleModal,active}) {
-    const { t, i18n } = useTranslation();
-    console.log(toggleModal)
+    const {t} = useTranslation();
     const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
+        i18next.changeLanguage(lng);
     };
     const HEADER_TOP = useRef(null);
     const NAV_MENU = useRef(null);
@@ -32,63 +34,33 @@ function Header({toggleModal,active}) {
     const NAV = [
         {
             "NAME": " HOME",
-            "Z": "HOME",
+            "ROUTE": "/",
         },
         {
             "NAME": " PLACE",
-            "Z": "HOME",
+            "ROUTE": "/place"
         },
         {
             "NAME": " BOOKING",
-            "Z": "HOME",
+            "ROUTE": "/booking"
         },
-        {
-            "NAME": " MARKETPLACE",
-            "Z": "HOME",
-        },
-        {
-            "NAME": " CONTACT",
-            "Z": "HOME",
-        }
+        
     ]
-    const PAGES_MENU = [
+    const languages = [
         {
-            "NAME": "ABOUT",
-            "PAGE": "/"
-        },
+            code: 'en',
+            name: 'English',
+            country_code: 'gb',
+          },
         {
-            "NAME": "AFFLIATE",
-            "PAGE": "/"
+            code: 'vn',
+            name: 'Vietnamese',
+            country_code: 'vn',
         },
-        {
-            "NAME": "AWARDS",
-            "PAGE": "/"
-        },
-        {
-            "NAME": "BONUS",
-            "PAGE": "/"
-        },
-        {
-            "NAME": "CART",
-            "PAGE": "/"
-        },
-        {
-            "NAME": "FAQ",
-            "PAGE": "/"
-        },
-        {
-            "NAME": "HOW IT WORK",
-            "PAGE": "/"
-        },
-        {
-            "NAME": "TERM & CONDITIONS",
-            "PAGE": "/"
-        },
-        {
-            "NAME": "CONDITION DETAIL",
-            "PAGE": "/"
-        },
-    ]
+      
+      ]
+      let HEADER_TRANS = i18next.t(`header_pages`, { returnObjects: true });
+      let TOP_HEADER = t('top_header', { returnObjects: true });
     return (
         <header ref={HEADER}>
             <div ref={HEADER_TOP} className='header__top'>
@@ -96,8 +68,8 @@ function Header({toggleModal,active}) {
                     <div className='row'>
                         <div className='col'>
                             <div className='content'>
-                                <LeftContent />
-                                <RightContent />
+                                <LeftContent content={TOP_HEADER.left} languages={languages} changeLanguage={changeLanguage}/>
+                                <RightContent content={TOP_HEADER.right}/>
                             </div>
                         </div>
                     </div>
@@ -109,24 +81,24 @@ function Header({toggleModal,active}) {
                         <div className='col'>
                             <nav className='navbar'>
                                 <a className ='nav__brand'>
-                                    <h1>TRIP360</h1>
+                                    <h1>TRAVEL360</h1>
                                     </a>
                                     <div className='navbar-collapse'>
                                         <ul className='navbar__nav'>
+                                            
                                             {NAV.map((item,index)=>{
-
                                                 let LINKCLASSNAME = 'nav__link';
                                                 let ITEMCLASSNAME = 'nav__item';
                                                 if(index==active) ITEMCLASSNAME+=' active';
                                                 if(item.NAME===" HOME" || item.NAME===" PAGES") LINKCLASSNAME+=" dropdown-toggle";
                                                 return(<li key={index} className={ITEMCLASSNAME}>
-                                                <Link to="/" className={LINKCLASSNAME}>
-                                                    {item.NAME}
+                                                <Link to={item.ROUTE} className={LINKCLASSNAME}>
+                                                    {HEADER_TRANS[index]}
                                                 </Link>
                                             </li>)
                                             })}
                                             <li className='nav__item'>
-                                            <Button onClickFunc={toggleModal} btnClassName='btn-active'>Join us</Button>
+                                            <Button onClickFunc={toggleModal} btnClassName='btn-active'>{HEADER_TRANS[HEADER_TRANS.length-1]}</Button>
                                             </li>
                                             
                                         </ul>

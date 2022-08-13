@@ -1,15 +1,18 @@
 import FeaturesGames from "./FeaturedGames/FeaturesGames";
 import FeaturesBox from "./FeaturesBox/FeaturesBox";
-
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import './features.scss';
+import SectionHeading from "../../../components/SectionHeading/SectionHeading";
 function Features() {
-    
+    const {t} = useTranslation();
+    let FEATURES = t('features',{ returnObjects: true });
+    const SECTION_HEADING =(FEATURES.features_games.section_heading);
     return (<section className="features">
             <div className="container">
                 <div className="row">
                     <div className="col-12-align">
-                        <FeaturesBox>
+                        <FeaturesBox content={FEATURES.features_box}>
 
                         </FeaturesBox>
                     </div>
@@ -18,21 +21,13 @@ function Features() {
         <div className="featured-games">
             <div className="row content">
             <div className="col">
-                <div className="section-heading">
-                    <h5 className="subtitle">
-                        Try to check out our
-                    </h5>
-                    <h2 className="title">
-                        travel service
-                    </h2>
-                    <p className="text">
-                        
-                    </p>
-                </div>
+               <SectionHeading title={SECTION_HEADING.title} subtitle={SECTION_HEADING.sub_title}>
+
+               </SectionHeading>
             </div>
             </div>
             <div className="row">
-                <FeaturesGames></FeaturesGames>
+                <FeaturesGames content={FEATURES.features_games}></FeaturesGames>
             </div>
         </div>
     </section>);

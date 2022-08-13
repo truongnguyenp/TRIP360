@@ -1,0 +1,39 @@
+{
+    "top_header": {
+        "left":[" Hỗ trợ"],
+        "right": ["Sign in"]
+    },
+    "header_pages": 
+    [
+        
+            "TRANG CHỦ"
+            ,"ĐIỂM DU LỊCH","ĐẶT VÉ","TRẢI NGHIỆM"
+    ],
+    "home_hero": [
+        "CHÀO MỪNG ĐẾN VỚI","TRIP360","Hãy du lịch cùng nhau","Xem điểm du lịch"
+    ],
+    "features": {
+        "features_box": ["ƯU ĐÃI HẤP DẪN","DỊCH VỤ TỐT NHẤT","HỖ TRỢ 24/7"],
+        "features_games": {
+            "section_heading": {
+                "sub_title": "TRẢI NGHIỆM NGAY",
+                "title": "DỊCH VỤ DU LỊCH"
+            },
+            "features_list": [
+                "Trải nghiệm ngay", "ĐỊA ĐIỂM","TOUR","NHÀ HÀNG"
+            ]
+        }
+    },
+    "activities": {
+        "section_heading": {
+            "sub_title": "MỘT CÁCH THÔNG MINH ĐỂ",
+            "title": "DU LỊCH",
+            "text":"DỊCH VỤ DU LỊCH THỰC TẾ ẢO ĐẦU TIÊN"
+        },
+        "table": {
+            "table_heading": ["Thế giới", "Châu Á", "Châu Âu"],
+            "tab_menu": ["Thế giới", "Châu Á", "Châu Âu"]
+
+        }
+    }
+  }

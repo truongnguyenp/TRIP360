@@ -1,26 +1,33 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-function LeftContent() {
+function LeftContent({ content,languages, changeLanguage }) {
     return (<div className='left-content'>
         <ul className='left-list'>
+       
             <li>
                 <p>
                     <FontAwesomeIcon icon="fa-solid fa-headset" />
-                {" Support"}
+                    {content}
                 </p>
 
             </li>
-            <li>
+            {/* <li>
                 <p>
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />
-                    {" travel@trip360.com"}
+                    {" thanhtm78@akagames.io"}
                 </p>
-            </li>
+            </li> */}
             <li>
-                <div className="language-selector">
+                <div onChange={(e) => { changeLanguage(e.target.value); }} className="language-selector">
                     <select name="language" className="language">
-                        <option value="1">English</option>
-                        <option value="2">Vietnamese</option>
+                        {languages.map(({ code, name, country_code }) => {
+                            return(
+                                        <option key={code} value={code}>
+                                            <p>{name}</p>
+                                         <span className={`fi fi-gr ${country_code}`}>
+                                         </span>
+                                         </option>
+                            )
+                        })}
                     </select>
                 </div>
             </li>

@@ -2,21 +2,21 @@ import Card from "../../../../components/Card/Card";
 import image1 from '../../../../assets/feature/icon1.png';
 import image2 from '../../../../assets/feature/icon2.png';
 import image3 from '../../../../assets/feature/icon3.png';
-function FeaturesBox(props,children) {
+function FeaturesBox({content}) {
     const FEATURES_OFFER = [
         {
             "image": image1,
-            "title": "GREAT OFFER",
+            "title": content[0],
             "Other": "READ MORE"
         },
         {
             "image": 'https://scholarlyoa.com/wp-content/uploads/2020/03/Customer-Service-girl-640x581.jpeg',
-            "title": "BEST SERVICE",
+            "title": content[1],
             "Other": "READ MORE"
         },
         {
             "image": image3,
-            "title": "247 SUPPORT",
+            "title": content[2],
             "Other": "READ MORE"
         }
         

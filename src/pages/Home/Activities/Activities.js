@@ -1,8 +1,12 @@
 import SectionHeading from "../../../components/SectionHeading/SectionHeading";
 import Table from "../../../components/Table/Table";
 import Button from "../../../components/Button/Button";
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 function Activities() {
+    const {t} = useTranslation();
+    let ACTIVITIES = t('activities',{ returnObjects: true });
+    const SECTION_HEADING = ACTIVITIES.section_heading;
     const DATA_FETCH = [
         [{
             "NAME": "DA NANG",
@@ -87,22 +91,15 @@ function Activities() {
 
     ]
     let [data, setData] = useState(DATA_FETCH[0]);
-    const TABLE_HEADING = [
-        "PLACE", "PRICE", "SERVICE"
-    ]
-    const SECTION_HEADING = {
-        "SUBTITLE": "THE SMARTER WAY TO",
-        "TITLE": "TRAVEL",
-        "TEXT": "THE FIRST 3D PLACE TRAVELLING AGENCY"
-    }
+    const TABLE_HEADING = ACTIVITIES.table.table_heading;
     const TAB_MENU =
-        ["ALL", "ASIA", "EUROPE"];
+    ACTIVITIES.table.tab_menu;
     let [menuActive, setMenuActive] = useState(0);
     return (<div className="activities">
         <div className="container">
             <div className="row">
 
-                <SectionHeading subtitle={SECTION_HEADING.SUBTITLE} title={SECTION_HEADING.TITLE} text={SECTION_HEADING.TEXT}></SectionHeading>
+                <SectionHeading subtitle={SECTION_HEADING.subtitle} title={SECTION_HEADING.title} text={SECTION_HEADING.text}></SectionHeading>
             </div>
 
             <div className="row">

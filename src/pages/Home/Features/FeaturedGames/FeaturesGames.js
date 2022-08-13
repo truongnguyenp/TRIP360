@@ -4,18 +4,20 @@ import game1 from '../../../../assets/game/icon1.png';
 import game2 from '../../../../assets/game/icon2.png';
 import game3 from '../../../../assets/game/icon3.png';
 import Button from "../../../../components/Button/Button";
-function FeaturesGames() {
+function FeaturesGames({content}) {
+    const heading = content.secion_heading;
+    const games = content.features_list;
     const FEATURED_GAMES = [
         {
-            "name": "PLACE",
+            "name": games[1],
             "image": 'https://previews.123rf.com/images/kannaa123rf/kannaa123rf1609/kannaa123rf160900034/67556269-world-landmarks-concept-vector-illustration-for-travel-design-famous-country-symbol-icon-tourism-cit.jpg'
         },
         {
-            "name": "TOUR",
+            "name": games[2],
             "image": 'https://img.freepik.com/premium-vector/travel-icon-elements_1639-5063.jpg?w=2000'
         },
         {
-            "name": "RESTAURANT",
+            "name": games[3],
             "image": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR18T3AuaaUv1I2G4iHRTu2lcpfwSOoSHI1Xw&usqp=CAU'
         }
     ]
@@ -26,7 +28,7 @@ function FeaturesGames() {
                             return (
                                 <Card image={item.image} title={item.name}>
                                     <Button className='center' btnClassName='btn-active'>
-                                        TRY NOW
+                                        {games[0]}
                                     </Button>
                                 </Card>
                             )
