@@ -33,7 +33,7 @@ i18next
         loadPath:
             process.env.NODE_ENV !== "production"
                 ? `/src/assets/locales/{{lng}}/translation.json`
-                : ` /static/app/static/locales/{{lng}}/translation.json`,
+                : ` /static/locales/{{lng}}/translation.json`,
       }]
     }
   });
