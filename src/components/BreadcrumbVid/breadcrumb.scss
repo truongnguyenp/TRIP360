@@ -1,0 +1,21 @@
+@import '../../styles/variable';
+.breadcrumb{
+    background-color: $bg-color;
+    .row{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .title{
+        font-size: 28px !important;
+        width: 40%;
+    }
+    .col{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .bcImg{
+        width: 60%;
+        height: auto;
+    }
+}
